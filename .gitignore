@@ -1,0 +1,24 @@
+# Virtualenv
+ansible_env/
+.venv/
+env/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Outputs / Logs
+inputs/VPN_Inputs/
+devices_configurations/
+audit_configs/
+*.log
+*.csv
+*.zip
+*.yml
+*.yaml
+
+# Local configs
+inventory
+.DS_Store
+.vscode/
