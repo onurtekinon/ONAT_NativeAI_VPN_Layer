@@ -1,14 +1,3 @@
-Perfect — here’s the **full English version** of everything:
-✅ a professional `README.md`
-✅ an MIT `LICENSE`
-✅ a minimal `requirements.txt`
-✅ and the **exact terminal commands** to create and push them to your GitHub repo.
-
----
-
-## 1️⃣ `README.md`
-
-````markdown
 # ONAT Native AI VPN Layer
 
 A lightweight Flask-based orchestration portal for automated Cisco VPN configuration lifecycle management.
@@ -38,7 +27,7 @@ python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 python server.py
 # open http://127.0.0.1:5001
-````
+```
 
 > Note: `inputs/VPN_Inputs/`, `devices_configurations/`, and `audit_configs/` are ignored via `.gitignore`.
 
@@ -89,120 +78,79 @@ logger.py                     # Log writer
 
 ## 🧠 Roadmap
 
-* DMVPN Phase 1 / 2 / 3 automatic generator
-* Multi-vendor support (Cisco IOS-XE, ASA, Junos)
-* WebAuth + RBAC integration
-* Optional AI-based config validation (planned)
+* DMVPN Phase 1 / 2 / 3 automatic generator  
+* Multi-vendor support (Cisco IOS-XE, ASA, Junos)  
+* WebAuth + RBAC integration  
+* Optional AI-based config validation  
+
+---
+
+## ⚖️ License Model
+
+### ✔ Public Components — Apache 2.0  
+This VPN Layer and all public-facing utilities are licensed under **Apache License 2.0**  
+See: `LICENSE`
+
+### 🔒 Proprietary Components (Closed Source)  
+The following modules are NOT open-source and are fully owned by Onur Tekin:
+
+- ONAT Native AI Core  
+- Hardware-Anchored Identity Model  
+- Deterministic Trust Pipeline  
+- Secure Execution Layer  
+- Native AI Architecture & Methodology  
+
+> These are licensed separately under a proprietary license.  
+> See `LICENSE-CORE.md`.
 
 ---
 
 ## 📄 License
+- Public components → Apache 2.0  
+- ONAT Native AI Core → Proprietary License (`LICENSE-CORE.md`)
+Copyright © 2025 Onur Tekin — Berlin, Germany
 
-MIT License — see `LICENSE`
+This repository contains two types of components:
 
-````
+1) Public Modules (open source):
+   - VPN Layer
+   - Flask Portal
+   - CLI/YAML Generators
+   - Demo Tools
 
----
+   These components are licensed under the Apache License, Version 2.0.
 
-## 2️⃣ `LICENSE` (MIT)
+2) Proprietary Components (closed source):
+   - ONAT Native AI Core
+   - Hardware-Anchored Identity Model
+   - Deterministic Trust Pipeline
+   - Secure Execution Layer
+   - Native AI Architecture & Methodology
 
-```text
-MIT License
+   These components are NOT licensed under Apache 2.0.
+   All rights reserved © 2025 Onur Tekin.
+   Commercial, enterprise, or derivative use requires a separate written license.
 
-Copyright (c) 2025 Onur Tahsin Tekin
+-----------------------------------------------------------------------
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Apache License
+Version 2.0, January 2004
+http://www.apache.org/licenses/
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-````
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use the open-source portion of this repository except in
+compliance with the License. You may obtain a copy of the License at:
 
----
+    http://www.apache.org/licenses/LICENSE-2.0
 
-## 3️⃣ `requirements.txt`
+Distributed under an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND.
+See the License for the specific language governing permissions and limitations.
 
-```text
+3️⃣ requirements.txt
+
 Flask>=3.0
 PyYAML>=6.0
-```
 
----
-
-## 4️⃣ One-Line Setup & Push Commands
-
-Run these in your repo root (`/Users/onurtekin/Desktop/ONAT_NativeAI_VPN`):
-
-```bash
-# Create README
-cat > README.md <<'EOF'
-# ONAT Native AI VPN Layer
-A lightweight Flask-based orchestration portal for automated Cisco VPN configuration lifecycle management.
-
-Supports:
-- **Create:** `create crypto isakmp sa` (requires CSV)
-- **Modify:** `modify crypto isakmp sa <PartnerName>` (requires CSV)
-- **Delete:** `delete crypto isakmp sa <PartnerName>`
-
-<p align="center">
-  <img src="static/Logo/ONAT_Logo.png" height="64" alt="ONAT Logo"/>
-</p>
-
-## Features
-- CLI + YAML configuration generation
-- Interface conflict detection
-- Ticket-based logging
-- DMVPN Phase 1/2/3 ready
-EOF
-
-# Create LICENSE
-cat > LICENSE <<'EOF'
-MIT License
-
-Copyright (c) 2025 Onur Tahsin Tekin
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-EOF
-
-# Create requirements.txt
-cat > requirements.txt <<'EOF'
-Flask>=3.0
-PyYAML>=6.0
-EOF
-
-# Add + commit + push
-git add README.md LICENSE requirements.txt
-git commit -m "docs: add README, LICENSE and requirements.txt"
+git add README.md LICENSE LICENSE-CORE.md requirements.txt
+git commit -m "docs: update licensing model (Apache + Proprietary Core)"
 git push
-```
-
----
-
-After this, refresh your GitHub repo page — you’ll see:
-✅ README preview
-✅ License tag (“MIT”)
-✅ Auto-detected Python stack
-
-Would you like me to add a **GitHub Actions CI workflow** next (to lint or auto-test your Flask app on push)? It’s a good next step for a public project.
