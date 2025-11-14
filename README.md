@@ -1,5 +1,9 @@
 # ONAT Native AI VPN Layer
 
+🔗 Relationship Between VPN Layer and ONAT Core
+
+The ONAT Native AI VPN Layer is a standalone, public-facing module built on top of concepts originating from the ONAT Native AI Core.
+However, the Core (Native AI engine, ShinSeal identity layer, deterministic trust pipeline, execution logic) is NOT part of the open-source release and remains fully proprietary.
 A lightweight Flask-based orchestration portal for automated Cisco VPN configuration lifecycle management.
 
 ## Supported Operations
