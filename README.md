@@ -171,3 +171,17 @@ git add README.md LICENSE LICENSE-CORE.md requirements.txt
 git commit -m "docs: update licensing model (Apache + Proprietary Core)"
 git push
 ```
+## Licensing Clarification
+
+A previous version of this repository may have incorrectly displayed or inherited
+an open-source license template (MIT/Apache) before the ONAT Native AI Core licensing
+model was finalized. This was an administrative artifact of early repository
+initialization and did not constitute a license grant.
+
+All ONAT Native AI Core components — including the architectural design,
+trust pipeline, ShinSeal identity model, execution logic, and derivative technologies —
+have always remained proprietary and exclusively owned by Onur Tekin.
+
+Any prior appearance of an open-source license is hereby corrected and superseded
+by the ONAT Native AI Core Proprietary License (LICENSE-CORE.md).
+
