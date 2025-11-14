@@ -185,3 +185,8 @@ have always remained proprietary and exclusively owned by Onur Tekin.
 Any prior appearance of an open-source license is hereby corrected and superseded
 by the ONAT Native AI Core Proprietary License (LICENSE-CORE.md).
 
+> **ONAT™ Native AI Core**  
+> Proprietary Technology — Copyright © 2025 Onur Tekin  
+> All rights reserved.  
+> Unauthorized use, derivative work, or redistribution is prohibited.
+
