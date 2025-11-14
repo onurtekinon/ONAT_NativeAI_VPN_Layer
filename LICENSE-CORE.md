@@ -1,6 +1,7 @@
 ONAT Native AI Core License (Proprietary License)
 
 © 2025 Onur Tekin — Berlin, Germany
+
 All rights reserved.
 
 This proprietary license applies only to the following components of the ONAT Native AI ecosystem:
